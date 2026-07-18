@@ -29,6 +29,7 @@ dependencies {
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.junit.jupiter:junit-jupiter")
+    checkstyle("com.puppycrawl.tools:checkstyle:10.17.0")
 }
 
 tasks.withType<Test> {
@@ -45,6 +46,7 @@ checkstyle {
     isShowViolations = true
     maxErrors = 0
     maxWarnings = 0
+    enableExternalDtdLoad = false
 }
 
 // SpotBugs
