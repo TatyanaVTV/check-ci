@@ -1,0 +1,5 @@
+<!-- config/checkstyle/configuration_10_17_0.dtd -->
+<!ELEMENT module (property*, module*)>
+<!ATTLIST module name CDATA #REQUIRED>
+<!ELEMENT property EMPTY>
+<!ATTLIST property name CDATA #REQUIRED value CDATA #IMPLIED>
