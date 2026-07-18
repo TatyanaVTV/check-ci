@@ -16,6 +16,8 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
+      - name: Make gradlew executable
+        run: chmod +x gradlew
       - name: Run Checkstyle
         run: ./gradlew checkstyleMain checkstyleTest --no-daemon
       - name: Upload Checkstyle report
